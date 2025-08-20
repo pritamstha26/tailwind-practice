@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.btn {
+  @apply py-2  text-lg rounded-lg font-bold text-white  cursor-pointer;
+}
+
+.images {
+  @apply object-fill w-full rounded-lg h-full;
+}
+
+@layer base {
+  h1 {
+    text-align: center;
+  }
+  .card {
+    background-color: var(--color-white);
+    border-radius: var(--radius-lg);
+    padding: --spacing(6);
+    box-shadow: var(--shadow-xl);
+  }
+}
