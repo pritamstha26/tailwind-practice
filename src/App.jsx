@@ -8,7 +8,7 @@ import Navbar from "./component/Navbar";
 
 export default function App() {
   return (
-    <div className="h-screen w-screen items-center flex justify-center  ">
+    <div className="h-screen w-screen   ">
       <Navbar />
     </div>
   );
