@@ -34,27 +34,31 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex  w-full  p-2 flex-row  md:justify-evenly   sm:justify-around">
-      <button onClick={handleHamBurger} className="flex justify-start">
-        {isOpen ? <X size={28} /> : <Menu size={28} />}
-      </button>
+    <nav className="  w-full  p-2  ">
+      <div className=" sm:hidden  ">
+        <button onClick={handleHamBurger} className=" ">
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
+      </div>
 
-      {isOpen && (
-        <ul className=" flex justify-around w-screen ">
-          {elements.map((items) => (
-            <li
-              className="list-none border   text-sky-300 border-sky-400 hover:text-black   flex  items-center gap-2 hover:border-black hover:bg-sky-400 p-2 rounded-lg outline-none  "
-              key={items.id}
-              onClick={() => {
-                alert("clicked");
-              }}
-            >
-              <span className="md:inline sm:inline hidden"> {items.title}</span>
-              <span className="md:inline inline">{items.iconTitle}</span>
-            </li>
-          ))}
-        </ul>
-      )}
+      <ul
+        className={`flex flex-col sm:flex-row justify-around w-full gap-2  ${
+          isOpen ? "block" : "hidden"
+        }   sm:flex`}
+      >
+        {elements.map((items) => (
+          <li
+            className="list-none border   text-sky-300 border-sky-400 max-w-max   hover:text-black   flex  items-center gap-2 hover:border-black hover:bg-sky-400 p-2 rounded-lg outline-none  "
+            key={items.id}
+            onClick={() => {
+              alert("clicked");
+            }}
+          >
+            <span className="  "> {items.title}</span>
+            <span className="inline">{items.iconTitle}</span>
+          </li>
+        ))}
+      </ul>
     </nav>
   );
 }
