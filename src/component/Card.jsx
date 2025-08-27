@@ -1,20 +1,29 @@
 import React from "react";
-import profile from "../assets/img8.jpg";
-export default function Card() {
+export default function Card({ image, title, overview }) {
+  const truncOverview = (overview) => {
+    if (overview.length > 20) {
+      return overview.slice(0, 100) + "....";
+    }
+  };
   return (
-    <div className="flex justify-center items-center ">
-      <div className="flex shadow-2xl  flex-col  gap-2 p-8 sm:flex-row justify-center sm:items-center sm:gap-6">
+    <div className="flex justify-center items-center   ">
+      <div className=" flex shadow-xl  flex-col w-screen sm:w-full  gap-2 p-3 sm:flex-row  sm:items-start ">
         <img
-          src={profile}
-          alt="Profile"
+          src={image}
+          alt="Movie profile"
           className="w-40  mx-auto block h-40 rounded-full  sm:mx-0 sm:shrink-0"
         />
         <div className="space-y-1 text-center  sm:text-left">
-          <div className="space-y-1">
-            <p className="text-lg font-semibold">Pritam Shrestha</p>
-            <p className="font-medium text-gray-500">Student</p>
+          <div className="space-y-1  ">
+            <p className="text-sm font-semibold break-words ">{title}</p>
+            <p className="text-tiny text-gray-500 ">
+              {truncOverview(overview)}
+            </p>
           </div>
-          <button className="border-purple-300 border text-purple-500 hover:bg-none rounded-xl hover:bg-purple-300 hover:text-white px-2 py-1">
+          <button
+            onClick={() => alert("hello")}
+            className="border-purple-300 border text-purple-500 hover:bg-none rounded-xl hover:bg-purple-300 hover:text-white px-2 py-1 text-xs"
+          >
             Contact
           </button>
         </div>

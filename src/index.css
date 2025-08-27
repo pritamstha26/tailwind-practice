@@ -19,3 +19,7 @@
     box-shadow: var(--shadow-xl);
   }
 }
+
+@theme {
+  --text-tiny: 0.625rem;
+}
