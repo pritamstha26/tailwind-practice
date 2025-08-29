@@ -31,7 +31,6 @@ export default function Card({ image,overview,title,...rest}) {
             View More
           </button>
         </div>
-        this from main 
       </div>
     </div>
   );
