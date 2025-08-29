@@ -22,6 +22,8 @@ export default function Card({ image,overview,title,...rest}) {
               {truncOverview(overview)}
             </p>
           </div>
+          hello
+          how do you do
           <button
             onClick={() => navigate('/single-movie',{
               state:{overview,title,...rest}
