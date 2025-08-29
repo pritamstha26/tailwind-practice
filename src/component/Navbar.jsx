@@ -34,7 +34,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="  w-full  p-2  ">
+    <nav className="  w-full  p-2  fixed">
       <div className=" sm:hidden  ">
         <button onClick={handleHamBurger} className=" ">
           {isOpen ? <X size={28} /> : <Menu size={28} />}

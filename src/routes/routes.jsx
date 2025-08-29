@@ -3,6 +3,7 @@ import NotFound from "../pages/NotFound";
 import Login from "../pages/Login";
 import Intro from "../pages/Intro";
 import MDB from "../pages/MDB";
+import Movie from "../pages/Movie";
 const routes = [
   {
     path: "/*",
@@ -19,6 +20,9 @@ const routes = [
   {
     path: "/movies",
     element: <MDB />,
+  },  {
+    path: "/single-movie",
+    element: <Movie />,
   },
 ];
 
