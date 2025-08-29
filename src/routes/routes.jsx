@@ -1,7 +1,7 @@
 import React from "react";
 import NotFound from "../pages/NotFound";
 import Login from "../pages/Login";
-import Intro from "../pages/intro";
+import Intro from "../pages/Intro";
 import MDB from "../pages/MDB";
 const routes = [
   {
