@@ -19,7 +19,9 @@
     box-shadow: var(--shadow-xl);
   }
 }
-
+.dynamic-bg{
+  background-image: var(--bg-image);
+}
 @theme {
   --text-tiny: 0.625rem;
 }
