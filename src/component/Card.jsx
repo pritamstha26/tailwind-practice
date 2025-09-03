@@ -17,8 +17,8 @@ export default function Card({ image,overview,title,...rest}) {
         />
         <div className="space-y-1 text-center flex flex-col justify-between flex-1  sm:text-left">
           <div className="space-y-1  ">
-            <p className="text-sm font-semibold break-words ">{title}</p>
-            <p className="text-tiny text-gray-500 ">
+            <p className="text-md font-semibold break-words ">{title}</p>
+            <p className="text-sm text-gray-500 ">
               {truncOverview(overview)}
             </p>
           </div>

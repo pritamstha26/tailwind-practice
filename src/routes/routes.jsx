@@ -4,6 +4,7 @@ import Login from "../pages/Login";
 import Intro from "../pages/Intro";
 import MDB from "../pages/MDB";
 import Movie from "../pages/Movie";
+import Youtube from "../pages/Youtube";
 const routes = [
   {
     path: "/*",
@@ -23,6 +24,9 @@ const routes = [
   },  {
     path: "/single-movie",
     element: <Movie />,
+  }, {
+    path: "/y-course",
+    element: <Youtube />,
   },
 ];
 

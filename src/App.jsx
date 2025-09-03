@@ -4,19 +4,23 @@ import Login from "./pages/Login";
 import Gallery from "./component/Gallery";
 import Title from "./component/Title";
 import Card from "./component/Card";
-import Navbar from "./component/Navbar";
+import Navbar from "./component/course/Navbar";
 import routes from "./routes/routes";
 import { Route, Routes } from "react-router-dom";
+import Hero from "./component/course/Hero";
+import Youtube from "./pages/Youtube";
 export default function App() {
   return (
-    <div className="h-screen w-full ">
-      <Routes>
+    // <div className="h-screen w-full  container m-auto">
+        <div className="h-screen w-full text-white bg-black">
+          <Youtube />
+      {/* <Routes>
         {routes.map((route, index) => {
           return (
             <Route path={route.path} element={route.element} key={index} />
           );
         })}
-      </Routes>
+      </Routes> */}
     </div>
   );
 }

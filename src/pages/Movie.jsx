@@ -8,18 +8,22 @@ export default function Movie() {
   console.log(movie)
 const url =`https://image.tmdb.org/t/p/original/${movie.poster_path}`
   return (
-    <div className="dynamic-bg w-full h-screen bg-repeat bg-cover bg-center" style={{'--bg-image':`url(${url})`}}>
+    <div className="dynamic-bg w-full h-screen bg-repeat bg-cover  bg-center " style={{'--bg-image':`url(${url})`}}>
         <Navbar />
-        <div className='grid grid-cols-1 h-screen  w-1/2  p-3  sm:p-30  '>
-        <p className='text-7xl font-extrabold font-mono text-white text-wrap  md:hidden'>
+        <div className='md:grid sm:grid sm:grid-cols-1 h-screen  hidden w-full  '>
+         <p className='text-white text-5xl font-semibold   '>
           {movie.title}
-        </p>
-        <p className='text-2xl  font-bold font-sans text-white leading-loose '>
+         </p>
+          <p className='text-white text-xl font-semibold leading-11   '>
           {movie.overview}
-        </p>
+          </p>
+          <span className='text-white text-lg font-semibold'>
+            helo
+          </span>
+     
         
 
-        </div>
+         </div>
     </div>
   )
 }
