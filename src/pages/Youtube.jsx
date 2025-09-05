@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '../component/course/Navbar'
 import Hero from '../component/course/Hero'
 import Analytics from '../component/course/Analytics'
+import News from '../component/course/News'
 
 export default function Youtube() {
   return (
@@ -9,6 +10,7 @@ export default function Youtube() {
       <Navbar />
       <Hero />
       <Analytics />
+      <News />
       
     </div>
   )
