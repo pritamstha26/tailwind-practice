@@ -2,27 +2,32 @@ import React from 'react'
 
 export default function News() {
   return (
-    <div className='w-full  flex justify-center items-center py-16 text-white bg-black'> 
 
-      <div className=' grid grid-cols-3  items-center container p-3 '>
-        <div className='md:col-span-2  col-span-3'>
 
-        <h1 className='font-extrabold text-4xl'>Lorem ipsum dolor sit amet.</h1>
-        <p className='text-md'> 
-          Lorem ipsum dolor sit amet consectetur adipisicing.
-        </p>
-        </div>
+    <div className='bg-black p-6 flex flex-col md:flex-row justify-between  gap-3' >
 
-          <div className='md:col-span-1 col-span-3'>
-        <div className='grid grid-cols-3 gap-2'>
+      <div className='py-10 md:w-1/2'>
+        <h1 className='text-3xl font-extrabold'>Lorem ipsum dolor, sit amet consectetur .</h1>
+        <p>Lorem ipsum dolor, sit amet  iure officia ab rem.</p>
+      </div>
+      <div className='  md:w-1/2 text-white ' >
+      <div className='flex flex-col sm:flex-row gap-3 py-3
+       items-center  justify-center '>
 
-        <input type="text" className='bg-white py-2 col-span-3 md:col-span-2 max-w-[200px] rounded-md' />
-        <button className='bg-green-300 text-black py-2 px-4 col-span-3 max-w-[200px] md:col-span-1 rounded-md font-extrabold'>Notify me</button>
-        <p className='col-span-3'>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-        <a href="#" className='text-green-300 underline col-span-3'> Privacy Policy</a>
-        </div>
+          <input type="text" className='bg-white text-lg md:text-xl    p-2 w-full sm:flex-1 rounded-sm  outline-none   text-black' placeholder='Enter your email' />
+          <button className='bg-green-300 hover:bg-green-400 text-lg md:text-xl  py-2 px-3 font-bold sm:w-auto  text-black rounded-sm cursor-pointer hover ' onClick={()=> alert("jello") }>Notify me</button>
+      </div>
+        <div className='py-3'>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, veritatis.
+            </p>
+            <a href="#" className='text-green-300  underline '>Privacy Policy</a>
         </div>
       </div>
+      
+
+
     </div>
+   
   )
 }
