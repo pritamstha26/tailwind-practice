@@ -22,11 +22,12 @@ export default function Navbar() {
  : <X size={30} onClick={handleNav} />
 }
     </div>
-    <div className={ nav? `fixed left-0 top-10 w-[60%] border-r border-r-gray-900 md:hidden  duration-500`:
+    <div className={ nav? `fixed left-0 top-0 h-screen bg-black text-white w-[60%] border-r border-r-gray-900 md:hidden  duration-500`:
      ' fixed left-0 top-0 w-[60%] border-r border-r-gray-900 hidden '
     }>
+    <h1 className='uppercase w-full p-4 text-3xl font-bold text-green-300   '>React. </h1>
 
-         <ul className=' uppercase p-4 '>
+         <ul className=' uppercase px-4 '>
 
         <li className='p-4  border-b border-gray-600'>Home</li>
         <li className='p-4 border-b border-gray-600'>Company</li>
