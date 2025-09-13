@@ -11,16 +11,14 @@ import Hero from "./component/course/Hero";
 import Youtube from "./pages/Youtube";
 export default function App() {
   return (
-    // <div className="h-screen w-full  container m-auto">
         <div className="h-screen w-full text-white bg-black">
-          <Youtube />
-      {/* <Routes>
+      <Routes>
         {routes.map((route, index) => {
           return (
             <Route path={route.path} element={route.element} key={index} />
           );
         })}
-      </Routes> */}
+      </Routes>
     </div>
   );
 }
