@@ -4,7 +4,7 @@ export default function News() {
   return (
 
 
-    <div className='bg-black p-6 flex flex-col md:flex-row justify-between  gap-3' >
+    <div className='bg-black p-6 flex flex-col md:flex-row justify-between   gap-3' >
 
       <div className='py-10 md:w-1/2'>
         <h1 className='text-3xl font-extrabold'>Lorem ipsum dolor, sit amet consectetur .</h1>

@@ -4,6 +4,7 @@ import Hero from '../component/course/Hero'
 import Analytics from '../component/course/Analytics'
 import News from '../component/course/News'
 import Subscription from '../component/course/Subscription'
+import Footer from '../component/course/Footer'
 
 export default function Youtube() {
   return (
@@ -13,6 +14,7 @@ export default function Youtube() {
       <Analytics />
       <News />
       <Subscription />
+      <Footer />
     </div>
   )
 }
